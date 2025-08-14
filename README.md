@@ -80,8 +80,9 @@ This repository is intended solely for educational and leaning purposes. All cod
 ---
 
 ## Contributor
-**Name:** Nabeerah Yaqoot
-**Program:** BS Computer Science (BSCS) – Batch 2025  
+
+**Name:** Nabeerah Yaqoot  
+**Program:** BS Computer Science (BSCS) – Batch 2025
 
 [![GitHub](https://img.shields.io/badge/GitHub-nabeerah27-black?logo=github&logoColor=white)](https://github.com/nabeerah27)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-nabeerah27-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nabeerah27)
