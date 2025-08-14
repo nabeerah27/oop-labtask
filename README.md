@@ -4,8 +4,6 @@
 
 ## Table of Contents
 
----
-
 1. [Repository Overview](#repository-overview)
 2. [Course Details](#course-details)
 3. [Repository Structure](#repository-structure)
@@ -13,10 +11,11 @@
 5. [How to run the code](#how-to-run-the-code)
 6. [License](#license)
 7. [Contributor](#contributor)
+8. 
+---
 
 ## Repository Overview
 
----
 This repository contains all weekly **Object-Oriented Programming (OOP)** lab tasks for my university course.  
 Each week folder includes:
 - Problem statement
@@ -26,9 +25,9 @@ Each week folder includes:
 
 The aim is to keep everything structured and well-documented for better learning, reference, and a helpful resource for classmates.
 
-## Course Details
-
 ---
+
+## Course Details
 
 - **Course:** Object-Oriented Programming (OOP)
 - **Semester:** 2nd Semester
@@ -36,9 +35,9 @@ The aim is to keep everything structured and well-documented for better learning
 - **University:** UBIT - University of Karachi
 - **Instructor:** Dr. Humera Tariq
 
-## Repository Structure
-
 ---
+
+## Repository Structure
 
 ```yaml
 oop-labtask/
@@ -56,17 +55,18 @@ oop-labtask/
 
 ```
 
+---
+
 ## How to Navigate the Repository
 
----
 
 - **Week Folders:** Each folder represents a specific lab task.
 - **Code Folder:** Contains the Java source files implementing the task.
 - **README.md (inside each Week Folder):** Includes the problem statement, UML diagram, concepts applied, and explanation of the solution.
 
-## How to Run the Code
-
 ---
+
+## How to Run the Code
 
 1. Open the desired `Week-XX/Code` folder in your IDE (e.g., IntelliJ IDEA).
 2. Compile and run the `Main.java` file.
