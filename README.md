@@ -1,7 +1,5 @@
 # OOP Lab Tasks Repository
 
----
-
 ## Table of Contents
 
 1. [Repository Overview](#repository-overview)
@@ -11,7 +9,7 @@
 5. [How to run the code](#how-to-run-the-code)
 6. [License](#license)
 7. [Contributor](#contributor)
-8. 
+
 ---
 
 ## Repository Overview
