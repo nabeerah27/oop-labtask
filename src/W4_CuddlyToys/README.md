@@ -18,7 +18,7 @@ Use class attributes as appropriate. Demonstrate a method which wallows the toy 
 
 ## UML Diagram
 
-![UML Diagram](./uml.png)
+[➡ View UML Diagram](./uml.png)
 
 ---
 
@@ -49,6 +49,6 @@ You can view the complete source code for this task here:
 
 ## Program Output
 
-![Program Output](./output.png)
+[➡ View Program Output](./output.png)
 
 ---
