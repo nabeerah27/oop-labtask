@@ -41,13 +41,19 @@ The aim is to keep everything structured and well-documented for better learning
 oop-labtask/
   ├── Week-01/
   │   ├── code/            # Java source files for the week
-  │   ├── README.md        # Question, UML, concepts, and details
+  │   ├── README.md        # Question, concepts and details 
+  │   ├── uml.png          # UML diagram 
+  │   ├── output.png       # Output of the code 
   ├── Week-02/
   │   ├── code/
   │   ├── README.md
+  │   ├── uml.png
+  │   ├── output.png           
   ├── Week-03/
   │   ├── code/
   │   ├── README.md
+  │   ├── uml.png
+  │   ├── output.png           
   ├── ...
   ├── README.md            # Main repository documentation
 
