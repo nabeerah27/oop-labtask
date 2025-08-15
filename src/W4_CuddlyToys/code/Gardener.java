@@ -1,4 +1,4 @@
-package W4_CuddlyToys;
+package W4_CuddlyToys.code;
 
 // Gardener class is a derived (child) class of TeddyBear
 public class Gardener extends TeddyBear {

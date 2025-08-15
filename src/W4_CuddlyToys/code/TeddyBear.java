@@ -1,14 +1,14 @@
-package W4_CuddlyToys;
+package W4_CuddlyToys.code;
 
-// BunnyRabbits is an intermediate class (Parent class) that extends the base class CuddlyToy
-public class BunnyRabbit extends CuddlyToy {
+// TeddyBear is an intermediate class (Parent class) that extends the base class CuddlyToy
+public class TeddyBear extends CuddlyToy {
 
     private String color;
 
     // Constructor - calls the base class (CuddlyToy) constructor
-    // Sets size, color, and job (task/role) for the bunny rabbits
+    // Sets size, color, and job (task/role) for the teddy bear
 
-    public BunnyRabbit(String size, String color) {
+    public TeddyBear(String size, String color) {
         super(size);
         this.color = color;
     }
@@ -20,9 +20,9 @@ public class BunnyRabbit extends CuddlyToy {
         this.color = color;
     }
 
-    // A specific behavior for bunny rabbits - making noise
+    // A specific behavior for teddy bears - making noise
     public void makeNoise() {
-        System.out.println("Bunny says: SQUEAK! ");
+        System.out.println("Teddy says: GROWL! ");
     }
 
     @Override
@@ -34,7 +34,7 @@ public class BunnyRabbit extends CuddlyToy {
     // Overriding toString() to include the toy type and base class details
     @Override
     public String toString() {
-        return "🐰 Bunny Rabbit [Size = " + getSize() + ", Color = " + color + "]";
+        return "🧸 Teddy Bear [Size = " + getSize() + ", Color = " + color + "]";
     }
 
 

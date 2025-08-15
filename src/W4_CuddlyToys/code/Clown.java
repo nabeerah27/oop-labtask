@@ -1,4 +1,4 @@
-package W4_CuddlyToys;
+package W4_CuddlyToys.code;
 
 // Clown class is a derived (child) class of BunnyRabbits
 public class Clown extends BunnyRabbit {

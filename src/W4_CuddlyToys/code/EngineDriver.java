@@ -1,4 +1,4 @@
-package W4_CuddlyToys;
+package W4_CuddlyToys.code;
 
 // EngineDriver class is a derived (child) class of TeddyBear
 public class EngineDriver extends TeddyBear {

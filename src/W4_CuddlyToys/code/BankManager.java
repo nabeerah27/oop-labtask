@@ -1,4 +1,4 @@
-package W4_CuddlyToys;
+package W4_CuddlyToys.code;
 
 // BankManager class is a derived class (child) of BunnyRabbits
 public class BankManager extends BunnyRabbit {

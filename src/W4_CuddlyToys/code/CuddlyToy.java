@@ -1,4 +1,4 @@
-package W4_CuddlyToys;
+package W4_CuddlyToys.code;
 
 public class CuddlyToy {
 
