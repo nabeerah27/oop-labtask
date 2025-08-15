@@ -1,4 +1,4 @@
-package W7_RationalNumbers;
+package W5_Triangle_Scenario.code;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package W7_RationalNumbers;
+package W7_RationalNumbers.code;
 
 public class Program {
 
