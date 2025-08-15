@@ -58,8 +58,14 @@ You can view the complete source code for this task here:
 
 ## Program Output
 
-The screenshot below shows the program's output after successful execution:
+When executed:
 
-[➡ View Program Output](./output.png)
+- A window appears displaying the drawn shape (square).
+
+[➡ View Window Output](./window_output.png)
+
+- The console shows point operations and pen movements.
+
+[➡ View Console Output](./console_output.png)
 
 --- 
