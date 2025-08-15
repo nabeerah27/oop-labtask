@@ -1,4 +1,4 @@
-package W5_Canvas_Drawing;
+package W5_Canvas_Drawing.code;
 
 public class Point {
 
