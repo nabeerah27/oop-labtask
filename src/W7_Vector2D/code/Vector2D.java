@@ -1,4 +1,4 @@
-package W7_Vector2D;
+package W7_Vector2D.code;
 
 // Represents a 2D vector with x and y coordinates
 public class Vector2D {

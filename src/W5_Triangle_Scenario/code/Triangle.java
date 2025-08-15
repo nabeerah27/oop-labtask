@@ -1,4 +1,4 @@
-package W5_Triangle_Scenario;
+package W5_Triangle_Scenario.code;
 
 public class Triangle {
 

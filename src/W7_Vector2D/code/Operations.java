@@ -1,4 +1,4 @@
-package W7_Vector2D;
+package W7_Vector2D.code;
 
 public class Operations {
 
