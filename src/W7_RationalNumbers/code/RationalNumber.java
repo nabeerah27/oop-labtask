@@ -9,7 +9,7 @@ public class RationalNumber {
     // Default constructor to set default values as 0
     public RationalNumber() {
         this.numerator = 0;
-        this.denominator = 0;
+        this.denominator = 1;
     }
 
     // Parameterized constructor
