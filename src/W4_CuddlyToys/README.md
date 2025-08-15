@@ -1,7 +1,4 @@
-
----
-
-## **📄 Week XX - Lab Task**
+# **📄 Week 04 - Lab Task**
 
 ---
 
@@ -21,7 +18,7 @@ Use class attributes as appropriate. Demonstrate a method which wallows the toy 
 
 ## UML Diagram
 
-![Cuddly Toy UML final.png](../../../University/Semester/Second%20semester/Object%20Oriented%20Programming%20OOP/Cuddly%20Toy/Cuddly%20Toy%20UML%20final.png)
+![UML Diagram](./uml.png)
 
 ---
 
@@ -44,19 +41,14 @@ Use class attributes as appropriate. Demonstrate a method which wallows the toy 
 
 ---
 
-## Solution Overview
-[Briefly explain your approach to solving the problem. Mention any important OOP principles applied.]
-
----
-
 ## Code Location
 You can view the complete source code for this task here:  
-[➡ View Week-03 Code](./Week-01/Code)
+[➡ View Week-04 Code](./code)
 
 ---
 
-## Output Screenshot 
+## Program Output
 
-![Program Output](output.png)
+![Program Output](./output.png)
 
 ---
