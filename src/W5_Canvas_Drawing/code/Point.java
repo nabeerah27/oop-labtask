@@ -18,6 +18,12 @@ public class Point {
         this.y = y;
     }
 
+    // Copy constructor
+    public Point(Point other) {
+        this.x = other.x;
+        this.y = other.y;
+    }
+
     // Setter for both points
     public void set(int x,int y){
         this.x = x;
@@ -35,13 +41,13 @@ public class Point {
     }
 
     // Function to add two points; returns the resultant point
-    public Point add(Point other) {
-        return new Point(this.x + other.x, this.y + other.y);
+    public Point add(Point p) {
+        return new Point(this.x + p.x, this.y + p.y);
     }
 
     // Function to subtract two points; returns the resultant point
-    public Point subtract(Point other) {
-        return new Point(this.x - other.x, this.y - other.y);
+    public Point subtract(Point p) {
+        return new Point(this.x - p.x, this.y - p.y);
     }
 
     @Override
