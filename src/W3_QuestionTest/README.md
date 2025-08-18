@@ -101,6 +101,7 @@ The following code will give
 In Java, the `==` operator compares object references, not content.
 Here, `s1` points to the String pool object, while `s2` refers to a new object in the heap.
 Since both references point to different objects, the condition evaluates to `false`, and the output is **False**.
+
 ---
 
 ### Concepts Used 
@@ -112,6 +113,7 @@ Since both references point to different objects, the condition evaluates to `fa
 ### Code Location 
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1b Code](./code/Q1b.java)
+
 ---
 
 ## Question 1c 
