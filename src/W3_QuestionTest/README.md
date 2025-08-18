@@ -59,8 +59,9 @@ What will happen if you compile / run this code?
 --- 
 
 ### Code Location
-You can view the complete source code for this task here:  
-[➡ View Week-03 Q1a Code](./code/Q1a.java)
+
+You can view the complete source code for this task here:      
+  [➡ View Week-03 Q1a Code](./code/Q1a.java)
 ---
 
 ## Question 1b 
