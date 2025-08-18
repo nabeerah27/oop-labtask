@@ -877,7 +877,7 @@ after the comment // Here?
 
 ### Code Location
 
-This file contains the corrected working code for this question: 
+This file contains the corrected working code for this question:  
 [➡ View Week-03 Q1p Code](./code/Q1p.java)
 
 ---
