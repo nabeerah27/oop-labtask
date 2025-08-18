@@ -163,8 +163,10 @@ Hence, it executes the first `main` and prints:
 ---
 
 ### Code Location 
+
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1c Code](./code/Q1c.java)
+
 ---
 
 ## Question 1d
@@ -220,8 +222,10 @@ What will happen if you compile / run the following code?
 ---
 
 ### Code Location:
+
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1d Code](./code/Q1d.java)
+
 ---
 
 ## Question 1e
@@ -263,8 +267,10 @@ What will happen if you compile / run the following lines of code ?
 ---
 
 ### Code Location:
+
 This file contains the corrected working code for this question:   
 [➡ View Week-03 Q1e Code](./code/Q1e.java)
+
 ---
 
 ## Question 1f
@@ -317,8 +323,10 @@ What will be the output by the following code ?
 ---
 
 ### Code Location 
+
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1f Code](./code/Q1f.java)
+
 ---
 
 ## Question 1g
@@ -362,8 +370,10 @@ If you run the code below, what gets printed out ?
 ---
 
 ### Code Location
+
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1g Code](./code/Q1g.java)
+
 ---
 
 ## Question 1h
@@ -416,8 +426,10 @@ Given the following code what will be output?
 ---
 
 ### Code Location
+
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1h Code](./code/Q1h.java)
+
 ---
 
 ## Question 1g
@@ -468,8 +480,10 @@ population of every element of the array ia[] with a value from variable i?
 ---
 
 ### Code Location
+
 This file contains the corrected working code for this question:  
 [➡ View Week-03 Q1i Code](./code/Q1i.java)
+
 ---
 
 ## Question 1j 
@@ -509,8 +523,10 @@ What will be the result when you attempt to compile the program?
 - Multiplication with random values
 
 ### Code Location
+
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1j Code](./code/Q1j.java)
+
 ---
 
 ## Question 1k
@@ -560,8 +576,10 @@ What will happen when you compile and run the following code?
 ---
 
 ### Code Location
+
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1k Code](./code/Q1k.java)
+
 ---
 
 ## Question 1l 
@@ -615,8 +633,10 @@ What will happen when you attempt to compile and run the following code?
 ---
 
 ### Code Location
+
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1l Code](./code/Q1l.java)
+
 ---
 
 ## Question 1m
@@ -677,8 +697,10 @@ What will happen when you attempt to compile and run the following code?
 ---
 
 ### Code Location
+
 The complete source code for this question is available here:  
 [➡ View Week-03 Q1m Code](./code/Q1m.java)
+
 ---
 
 ## Question 1n
@@ -734,8 +756,10 @@ will allow the code to compile and run without error?
 ---
 
 ### Code Location
+
 This file contains the corrected working code for this question:  
 [➡ View Week-03 Q1n Code](./code/Q1n.java)
+
 ---
 
 ## Question 1o
@@ -794,8 +818,10 @@ after the comment line // Here?
 ---
 
 ### Code Location
+
 This file contains the corrected working code for this question:  
 [➡ View Week-03 Q1o Code](./code/Q1o.java)
+
 ---
 
 ## Question 1p
@@ -850,6 +876,8 @@ after the comment // Here?
 ---
 
 ### Code Location
+
 This file contains the corrected working code for this question: 
 [➡ View Week-03 Q1p Code](./code/Q1p.java)
+
 ---
