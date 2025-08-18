@@ -60,8 +60,8 @@ What will happen if you compile / run this code?
 
 ### Code Location
 
-You can view the complete source code for this task here:      
-  [➡ View Week-03 Q1a Code](./code/Q1a.java)
+You can view the complete source code for this task here:    
+[View Week-03 Q1a Code](./code/Q1a.java)
 ---
 
 ## Question 1b 
@@ -95,7 +95,8 @@ The following code will give
 
 ---
 
-### Explanation 
+### Explanation
+
 In Java, the `==` operator compares object references, not content.
 Here, `s1` points to the String pool object, while `s2` refers to a new object in the heap.
 Since both references point to different objects, the condition evaluates to `false`, and the output is **False**.
