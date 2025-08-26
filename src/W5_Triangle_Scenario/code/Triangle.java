@@ -42,6 +42,15 @@ public class Triangle {
         this.sideC = z;
     }
 
+    // Copy constructor
+    Triangle(Triangle other) {
+        count ++ ;
+        this.sideA = other.sideA;
+        this.sideB = other.sideB;
+        this.sideC = other.sideC;
+    }
+
+
     // Combine setter for all sides
     public void set(double sideA, double sideB, double sideC) {
         this.sideA = sideA;
