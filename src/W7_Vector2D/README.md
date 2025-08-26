@@ -1,4 +1,6 @@
-# **📄 Week 07 - Lab Task**
+<h1 align="center">📄 Week 07 - Lab Task</h1>
+
+<h2 align="center">🟢 VECTOR 2D CLASS</h2>
 
 ## UML Diagram
 
@@ -19,16 +21,6 @@ The UML diagram representing the class structure of this task:
 - Condition check for parallel and perpendicular vectors
 - Method overriding (toString( ) for clean output)
 - Formatted output with String.format( )
-
----
-
-## Keywords Used 
-
-- static
-- Math.sqrt( )
-- Math.acos( )
-- Math.toDegrees( )
-- String.format( )
 
 ---
 

@@ -1,4 +1,6 @@
-# **📄 Week 05 - Lab Task**
+<h1 align="center">📄 Week 05 - Lab Task</h1>
+
+<h2 align="center">🟢 CANVAS DRAWING</h2>
 
 ---
 
@@ -17,19 +19,6 @@ The following diagram represents the class structure and relationships for this 
 - Encapsulation 
 - Method overriding
 - Event-driven GUI concepts from Swing.
-
----
-
-## Keywords Used
-
-- extends 
-- super 
-- this 
-- ArrayList
-- repaint()
-- JFrame
-- JPanel
-- Graphics
 
 ---
 

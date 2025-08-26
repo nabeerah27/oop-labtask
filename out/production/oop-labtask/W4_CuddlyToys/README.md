@@ -18,6 +18,8 @@ Use class attributes as appropriate. Demonstrate a method which wallows the toy 
 
 ## UML Diagram
 
+The following diagram represents the class structure and relationships for this task:
+
 [➡ View UML Diagram](./uml.png)
 
 ---
@@ -48,6 +50,8 @@ You can view the complete source code for this task here:
 ---
 
 ## Program Output
+
+The screenshot below shows the program's output after successful execution:
 
 [➡ View Program Output](./output.png)
 

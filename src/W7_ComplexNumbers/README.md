@@ -1,4 +1,6 @@
-# 📄 Week 07 - Lab Task (COMPLEX NUMBERS) 
+<h1 align="center">📄 Week 07 - Lab Task</h1>
+
+<h2 align="center">🟢 COMPLEX NUMBERS</h2>
 
 ## UML Diagram
 
@@ -17,17 +19,6 @@ The UML diagram representing the class structure of this task:
 - Mathematical Computation — Using `Math.pow()`, `Math.sqrt()`, and `Math.abs()` for complex number calculations.
 - Composition — `Operations` class works on `ComplexNumber` objects.
 - Immutability Approach — `Operations` return new `ComplexNumber` objects instead of modifying existing ones.
-
----
-
-## Keywords Used
-
-- package
-- import
-- static
-- Math (class)
-- @Override (annotation)
-- System.out.printf
 
 ---
 

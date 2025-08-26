@@ -1,8 +1,10 @@
-# **📄 Week 04 - Lab Task**
+<h1 align="center">📄 Week 04 - Lab Task</h1>
+
+<h2 align="center">🟢 CUDDLY TOYS</h2>
 
 ---
 
-## Question
+## Problem Statement
 
 A toy manufacturer makes cuddly toys of four types in three sizes. Some toys are teddy bears, and some are bunny rabbits. 
 Blue teddy bears are dressed as engine drivers. and red ones as gardeners. 
@@ -34,12 +36,14 @@ The following diagram represents the class structure and relationships for this 
 
 ---
 
-## Keywords Used
+## Learning Notes:
 
-- extends 
-- super
-- this
-- instanceof
+- Practiced method overriding with `toString()` for better object representation.
+- Applied inheritance to extend the base Toy class (Teddy, Bunny, etc.).
+- Understood how `super.toString()` reuses parent class details in child classes.
+- Learned how roles (Clown, Gardener, Engine Driver, Bank Manager) can be modeled with subclasses.
+- Improved understanding of polymorphism: same method (`toString`) behaves differently across classes.
+- Learned reinforced OOP principles i.e., **Inheritance**, **Method overriding**, and **Code reusability**.
 
 ---
 

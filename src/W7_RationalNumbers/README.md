@@ -1,4 +1,6 @@
-# **📄 Week 07 - Lab Task**
+<h1 align="center">📄 Week 07 - Lab Task</h1>
+
+<h2 align="center">🟢 RATIONAL NUMBERS</h2>
 
 ## UML Diagram
 
@@ -17,17 +19,6 @@ The UML diagram representing the class structure of this task:
 - Recursive algorithm — GCD calculation
 - Data validation — checking denominator for zero and handling negative denominators
 - Method overriding — toString() for clean output formatting
-
----
-
-## Keywords Used
-
-- private
-- this
-- static
-- return
-- if-else
-- Math.abs()
 
 ---
 
