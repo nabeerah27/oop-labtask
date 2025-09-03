@@ -1,4 +1,4 @@
-package W10_Cloning.code;
+package Week10_Cloning.code;
 
 public class Cloning extends Array {
 
