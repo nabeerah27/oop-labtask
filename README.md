@@ -1,27 +1,32 @@
-# OOP Lab Tasks Repository
+<h1 align="center"> OOP Lab Tasks Repository </h1>
 
 ## Table of Contents
 
-1. [Repository Overview](#repository-overview)
-2. [Course Details](#course-details)
-3. [Repository Structure](#repository-structure)
-4. [How to Navigate the repository](#how-to-navigate-the-repository)
-5. [How to run the code](#how-to-run-the-code)
-6. [License](#license)
-7. [Contributor](#contributor)
+1. 📖 [Repository Overview](#repository-overview)
+2. 🎓 [Course Details](#course-details)
+3. 📂 [Repository Structure](#repository-structure)
+4. 📅 [Weekly Lab Tasks](#weekly-lab-tasks)
+5. 🧭 [Navigation Guide](#navigation-guide)
+6. ▶️ [How to Run Code](#how-to-run-code)
+7. 📜 [License](#license)
+8. 👩‍💻 [Contributor](#contributor)
 
 ---
 
 ## Repository Overview
 
 This repository contains all weekly **Object-Oriented Programming (OOP)** lab tasks for my university course.  
-Each week folder includes:
-- Problem statement
-- UML diagram
-- Concepts used
-- Java code solution
 
-The aim is to keep everything structured and well-documented for better learning, reference, and a helpful resource for classmates.
+Each week folder includes:
+
+- Problem Statement
+- UML Diagram
+- Concepts Used
+- Learning Notes
+- Code Location
+- Program Output 
+
+**The aim is to keep everything structured and well-documented for better learning, reference, and a helpful resource for classmates.**
 
 ---
 
@@ -61,8 +66,29 @@ oop-labtask/
 
 ---
 
-## How to Navigate the Repository
+## 📅 Weekly Lab Tasks
 
+| Week | Topic / Task Name     | Link                                     |
+|------|-----------------------|------------------------------------------|
+| 03   | Question Test         | [Week-03](./src/W3_QuestionTest)         |
+| 04   | Cuddly Toy            | [Week-04](./src/W4_CuddlyToys)           |
+| 05   | Canvas Drawing        | [Week-05](./src/W5_Canvas_Drawing)       |
+|      | Triangle Scenario     | [Week-05](./src/W5_Triangle_Scenario)    |
+| 06   | Turtle Command        | [Week-06](./src/W6_Turtle_Command)       |
+| 07   | Vector2d Class        | [Week-07](./src/W7_Vector2D)             |
+|      | Rational Number Class | [Week-07](./src/W7_RationalNumbers)      |
+|      | Complex Number Class  | [Week-07](./src/W7_ComplexNumbers)       |
+| 08   | n Dimensional Vector  | [Week-08](./src/W8_n_DimensionalVectors) |
+|      | Range Class           | [Week-08](./src/W8_Range)                |
+| 09   | Birthday Paradox      | [Week-09](./src/W9_Birthday_Paradox)     |
+|      | Word Frequency        | [Week-09](./src/W9_Word_Frequency)       |
+| 10   | Revision              | [Week-10](./src/W10_Revision)            |
+|      | Cloning               | [Week-10](./src/W10_Cloning)             |
+| ...  | ...                   | ...                                      |
+
+---
+
+## Navigation Guide
 
 - **Week Folders:** Each folder represents a specific lab task.
 - **Code Folder:** Contains the Java source files implementing the task.
@@ -70,7 +96,7 @@ oop-labtask/
 
 ---
 
-## How to Run the Code
+## How to Run Code
 
 1. Open the desired `Week-XX/Code` folder in your IDE (e.g., IntelliJ IDEA).
 2. Compile and run the `Main.java` file.
