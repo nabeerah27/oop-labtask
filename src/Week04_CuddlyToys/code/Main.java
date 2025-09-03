@@ -1,4 +1,4 @@
-package W4_CuddlyToys.code;
+package Week04_CuddlyToys.code;
 
 public class Main {
 

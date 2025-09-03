@@ -1,4 +1,4 @@
-package W5_Triangle_Scenario.code;
+package Week05_Triangle_Scenario.code;
 
 public class Main {
 

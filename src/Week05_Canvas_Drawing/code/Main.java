@@ -1,4 +1,4 @@
-package W5_Canvas_Drawing.code;
+package Week05_Canvas_Drawing.code;
 
 public class Main {
 
