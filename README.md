@@ -70,20 +70,20 @@ oop-labtask/
 
 | Week | Topic / Task Name     | Link                                     |
 |------|-----------------------|------------------------------------------|
-| 03   | Question Test         | [Week-03](./src/Week03_QuestionTest)         |
-| 04   | Cuddly Toy            | [Week-04](./src/Week04_CuddlyToys)           |
-| 05   | Canvas Drawing        | [Week-05](./src/Week05_Canvas_Drawing)       |
-|      | Triangle Scenario     | [Week-05](./src/Week05_Triangle_Scenario)    |
-| 06   | Turtle Command        | [Week-06](./src/Week06_Turtle_Command)       |
-| 07   | Vector2d Class        | [Week-07](./src/Week07_Vector2D)             |
-|      | Rational Number Class | [Week-07](./src/Week07_RationalNumbers)      |
-|      | Complex Number Class  | [Week-07](./src/Week07_ComplexNumbers)       |
-| 08   | n Dimensional Vector  | [Week-08](./src/Week08_n_DimensionalVectors) |
-|      | Range Class           | [Week-08](./src/Week08_Range)                |
-| 09   | Birthday Paradox      | [Week-09](./src/Week09_Birthday_Paradox)     |
-|      | Word Frequency        | [Week-09](./src/Week09_Word_Frequency)       |
-| 10   | Revision              | [Week-10](./src/Week10_Revision)            |
-|      | Cloning               | [Week-10](./src/Week10_Cloning)             |
+| 03   | Question Test         | [Week-03](src/Week03_QuestionTest)         |
+| 04   | Cuddly Toy            | [Week-04](src/Week04_CuddlyToys)           |
+| 05   | Canvas Drawing        | [Week-05](src/Week05_Canvas_Drawing)       |
+|      | Triangle Scenario     | [Week-05](src/Week05_Triangle_Scenario)    |
+| 06   | Turtle Command        | [Week-06](src/Week06_Turtle_Command)       |
+| 07   | Vector2d Class        | [Week-07](src/Week07_Vector2D)             |
+|      | Rational Number Class | [Week-07](src/Week07_RationalNumbers)      |
+|      | Complex Number Class  | [Week-07](src/Week07_ComplexNumbers)       |
+| 08   | n Dimensional Vector  | [Week-08](src/Week08_n_DimensionalVectors) |
+|      | Range Class           | [Week-08](src/Week08_Range)                |
+| 09   | Birthday Paradox      | [Week-09](src/Week09_Birthday_Paradox)     |
+|      | Word Frequency        | [Week-09](src/Week09_Word_Frequency)       |
+| 10   | Revision              | [Week-10](src/Week10_Revision)            |
+|      | Cloning               | [Week-10](src/Week10_Cloning)             |
 | ...  | ...                   | ...                                      |
 
 ---
