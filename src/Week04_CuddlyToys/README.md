@@ -22,7 +22,7 @@ Use class attributes as appropriate. Demonstrate a method which wallows the toy 
 
 The following diagram represents the class structure and relationships for this task:
 
-[➡ View UML Diagram](./uml.png)
+[➡ View UML Diagram](uml.png)
 
 ---
 
@@ -49,7 +49,7 @@ The following diagram represents the class structure and relationships for this 
 
 ## Code Location
 You can view the complete source code for this task here:  
-[➡ View Week-04 Code](./code)
+[➡ View Week-04 Code](code)
 
 ---
 
@@ -57,6 +57,6 @@ You can view the complete source code for this task here:
 
 The screenshot below shows the program's output after successful execution:
 
-[➡ View Program Output](./output.png)
+[➡ View Program Output](output.png)
 
 ---

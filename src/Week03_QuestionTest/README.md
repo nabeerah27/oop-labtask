@@ -63,7 +63,7 @@ What will happen if you compile / run this code?
 ### Code Location
 
 You can view the complete source code for this task here:    
-[View Week-03 Q1a Code](./code/Q1a.java)
+[View Week-03 Q1a Code](code/Q1a.java)
 
 ---
 
@@ -115,7 +115,7 @@ Since both references point to different objects, the condition evaluates to `fa
 ### Code Location 
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1b Code](./code/Q1b.java)
+[➡ View Week-03 Q1b Code](code/Q1b.java)
 
 ---
 
@@ -167,7 +167,7 @@ Hence, it executes the first `main` and prints:
 ### Code Location 
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1c Code](./code/Q1c.java)
+[➡ View Week-03 Q1c Code](code/Q1c.java)
 
 ---
 
@@ -226,7 +226,7 @@ What will happen if you compile / run the following code?
 ### Code Location:
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1d Code](./code/Q1d.java)
+[➡ View Week-03 Q1d Code](code/Q1d.java)
 
 ---
 
@@ -271,7 +271,7 @@ What will happen if you compile / run the following lines of code ?
 ### Code Location:
 
 This file contains the corrected working code for this question:   
-[➡ View Week-03 Q1e Code](./code/Q1e.java)
+[➡ View Week-03 Q1e Code](code/Q1e.java)
 
 ---
 
@@ -327,7 +327,7 @@ What will be the output by the following code ?
 ### Code Location 
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1f Code](./code/Q1f.java)
+[➡ View Week-03 Q1f Code](code/Q1f.java)
 
 ---
 
@@ -374,7 +374,7 @@ If you run the code below, what gets printed out ?
 ### Code Location
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1g Code](./code/Q1g.java)
+[➡ View Week-03 Q1g Code](code/Q1g.java)
 
 ---
 
@@ -430,7 +430,7 @@ Given the following code what will be output?
 ### Code Location
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1h Code](./code/Q1h.java)
+[➡ View Week-03 Q1h Code](code/Q1h.java)
 
 ---
 
@@ -484,7 +484,7 @@ population of every element of the array ia[] with a value from variable i?
 ### Code Location
 
 This file contains the corrected working code for this question:  
-[➡ View Week-03 Q1i Code](./code/Q1i.java)
+[➡ View Week-03 Q1i Code](code/Q1i.java)
 
 ---
 
@@ -527,7 +527,7 @@ What will be the result when you attempt to compile the program?
 ### Code Location
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1j Code](./code/Q1j.java)
+[➡ View Week-03 Q1j Code](code/Q1j.java)
 
 ---
 
@@ -580,7 +580,7 @@ What will happen when you compile and run the following code?
 ### Code Location
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1k Code](./code/Q1k.java)
+[➡ View Week-03 Q1k Code](code/Q1k.java)
 
 ---
 
@@ -637,7 +637,7 @@ What will happen when you attempt to compile and run the following code?
 ### Code Location
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1l Code](./code/Q1l.java)
+[➡ View Week-03 Q1l Code](code/Q1l.java)
 
 ---
 
@@ -701,7 +701,7 @@ What will happen when you attempt to compile and run the following code?
 ### Code Location
 
 The complete source code for this question is available here:  
-[➡ View Week-03 Q1m Code](./code/Q1m.java)
+[➡ View Week-03 Q1m Code](code/Q1m.java)
 
 ---
 
@@ -760,7 +760,7 @@ will allow the code to compile and run without error?
 ### Code Location
 
 This file contains the corrected working code for this question:  
-[➡ View Week-03 Q1n Code](./code/Q1n.java)
+[➡ View Week-03 Q1n Code](code/Q1n.java)
 
 ---
 
@@ -822,7 +822,7 @@ after the comment line // Here?
 ### Code Location
 
 This file contains the corrected working code for this question:  
-[➡ View Week-03 Q1o Code](./code/Q1o.java)
+[➡ View Week-03 Q1o Code](code/Q1o.java)
 
 ---
 
@@ -880,6 +880,6 @@ after the comment // Here?
 ### Code Location
 
 This file contains the corrected working code for this question:  
-[➡ View Week-03 Q1p Code](./code/Q1p.java)
+[➡ View Week-03 Q1p Code](code/Q1p.java)
 
 ---

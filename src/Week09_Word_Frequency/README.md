@@ -14,7 +14,7 @@ need not worry about efficiency at this point.
 
 The UML diagram representing the class structure of this task:
 
-[➡ View UML Diagram](./uml.png)
+[➡ View UML Diagram](uml.png)
 
 ---
 
@@ -66,7 +66,7 @@ otherwise the default value (like `0`). This avoids extra `if-else` checks.
 
 You can view the complete source code for this task here:
 
-[➡ View Week-09 Code](./code)
+[➡ View Week-09 Code](code)
 
 ---
 
@@ -74,6 +74,6 @@ You can view the complete source code for this task here:
 
 Sample console output demonstrating the program’s functionality:
 
-[➡ View Program Output](./output.png)
+[➡ View Program Output](output.png)
 
 ---

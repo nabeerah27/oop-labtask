@@ -8,7 +8,7 @@
 
 The following diagram represents the class structure and relationships for this task:  
 
-[➡ View UML Diagram](./uml.png)
+[➡ View UML Diagram](uml.png)
 
 ---
 
@@ -41,7 +41,7 @@ The following diagram represents the class structure and relationships for this 
 
 You can view the complete source code for this task here:  
 
-[➡ View Week-05 Code](./code)
+[➡ View Week-05 Code](code)
 
 ---
 
@@ -51,10 +51,10 @@ When executed:
 
 - A window appears displaying the drawn shape (square).
 
-[➡ View Window Output](./window_output.png)
+[➡ View Window Output](window_output.png)
 
 - The console shows point operations and pen movements.
 
-[➡ View Console Output](./console_output.png)
+[➡ View Console Output](console_output.png)
 
 --- 

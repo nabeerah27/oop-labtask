@@ -41,7 +41,7 @@ The UML diagram representing the class structure of this task:
 
 You can view the complete source code for this task here:
 
-[➡ View Week-07 Code](./code)
+[➡ View Week-07 Code](code)
 
 ---
 
@@ -49,4 +49,4 @@ You can view the complete source code for this task here:
 
 Sample console output showing all operations on complex numbers.
 
-[➡ View Program Output](./output.png)
+[➡ View Program Output](output.png)
