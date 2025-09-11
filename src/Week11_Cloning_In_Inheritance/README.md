@@ -8,6 +8,10 @@
 
 **Try to code class Int2 and class Int3 to capture behaviour of cloning in an inheritance hierarchy.**
 
+You can view the complete source code here: 
+
+[➡ View Week-11 Code](code)
+
 ### Question 2
 
 **Draw neat, properly labelled Heap-Stack footprint on a white sheet with handwritten approach.**
@@ -106,24 +110,6 @@ independent objects for every element in the collection.
 The UML diagram representing the class structure of this task:
 
 [➡ View UML Diagram](./uml.png)
-
----
-
-## Concepts Used
-
-
---- 
-
-## Learning Notes
-
-
----
-
-## Code Location
-
-You can view the complete source code for this task here:
-
-[➡ View Week-11 Code](code)
 
 ---
 
