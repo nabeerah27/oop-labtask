@@ -87,6 +87,7 @@ oop-labtask/
 | 11   | Cloning In Inheritance | [Week 11 - Cloning in Inheritance](src/Week11_Cloning_In_Inheritance) |
 | 12   | Custom Arrays          | [Week 12 - Custom Arrays](src/Week12_Custom_Arrays)                   |
 |      | Mini LMS               | [Week 12 - Mini LMS](src/Week12_Mini_LMS)                             |
+|      | Change Calculator      | [Week 12 - Change Calculator](src/Week12_Change_Calculator)           |
 | ...  | ...                    | ...                                                                   |
 
 ---
