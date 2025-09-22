@@ -1,7 +1,5 @@
 package Week12_Change_Calculator.code;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 public class ChangeCalculator {
@@ -34,12 +32,10 @@ public class ChangeCalculator {
         if (totalChange < 0)
         {
             System.out.println("Customer has given less money than charged amount. ");
-            return;
         }
         else if (totalChange == 0)
         {
             System.out.println("Customer has given exactly the same amount. No change needed. ");
-            return;
         }
         else
         {
