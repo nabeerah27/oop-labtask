@@ -20,11 +20,15 @@ Try to design your program so that it returns as few bills and coins as possible
     - If given amount < charged amount → insufficient money.
     - If given amount = charged amount → no change needed.
     - If given amount > charged amount → calculate change.
-3. Change is calculated using **Greedy Algorithm**:
+3. Change is calculated using **Greedy Algorithm** with arrays:
     - Start with the largest note (5000) and work down to the smallest coin (1).
-    - Always pick as many of the largest possible denomination.
-    - Subtract from the remaining change until it reaches 0.
-4. Results are stored in a `LinkedHashMap` (to maintain order).
+    - For each denomination:
+      - Use integer division (`/`) to calculate how many notes/coins of that denomination are needed.
+      - Use modulo (`%`) to update the remaining change, which is equivalent to subtracting the used amount.
+      - Continue until the remaining change becomes 0.
+4. Results are stored in **arrays**: 
+   - `noteCount[]` → stores how many notes of each denomination.
+   - `coinCount[]` → stores how many coins of each denomination.
 5. The program outputs a **structured breakdown** of notes and coins separately.
    If there are **no notes** or **no coins**, that section will be skipped in the output.
 
@@ -50,7 +54,7 @@ The UML diagram representing the class structure of this task:
 - Encapsulation — private fields for `chargedAmount`, `givenAmount`, and `totalChange`.
 - Conditional logic — validation for less, exact, or more money.
 - Greedy Algorithm — ensuring minimum number of notes and coins are returned.
-- Data structures — `LinkedHashMap` to store denominations in order.
+- **Arrays** — to store denominations and their respective counts.
 - Method decomposition — separate methods for input, validation, computation, and display.
 - Method overriding — `toString()` to generate a structured breakdown of notes and coins.
 
@@ -59,7 +63,7 @@ The UML diagram representing the class structure of this task:
 ## 📝 Learning notes
 
 - Practiced applying **Greedy Algorithm** in real-world currency distribution.
-- Reinforced the concept of maps `(LinkedHashMap)` for storing denomination-to-count mappings.
+- Reinforced the use of **arrays** for mapping denominations to counts.
 - Improved understanding of method responsibilities by dividing input, validation, and computation.
 - Strengthened skills in object-oriented programming with encapsulated fields and reusable methods.
 - Gained experience in user-friendly output formatting by separating notes and coins clearly.
