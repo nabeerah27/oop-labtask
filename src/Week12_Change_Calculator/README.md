@@ -51,12 +51,12 @@ The UML diagram representing the class structure of this task:
 
 ## 📚 Concepts Used
 
-- Encapsulation — private fields for `chargedAmount`, `givenAmount`, and `totalChange`.
-- Conditional logic — validation for less, exact, or more money.
-- Greedy Algorithm — ensuring minimum number of notes and coins are returned.
-- **Arrays** — to store denominations and their respective counts.
-- Method decomposition — separate methods for input, validation, computation, and display.
-- Method overriding — `toString()` to generate a structured breakdown of notes and coins.
+- **Encapsulation**: `private` fields for `chargedAmount`, `givenAmount`, and `totalChange`.
+- **Conditional logic**: Validation for less, exact, or more money.
+- **Greedy Algorithm**: Ensuring minimum number of notes and coins are returned.
+- **Arrays**: Store denominations and their respective counts.
+- **Method decomposition**: Separate methods for input, validation, computation, and display.
+- **Method overriding**: `toString()` to generate a structured breakdown of notes and coins.
 
 ---
 
