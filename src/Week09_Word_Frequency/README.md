@@ -2,7 +2,7 @@
 
 <h2 align="center">🟢 WORD COUNTER </h2>
 
-## Problem Statement
+## 📌 Problem Statement
 
 Write a Java program that inputs a list of words, separated by white
 space, and outputs how many times each word appears in the list. You
@@ -10,7 +10,7 @@ need not worry about efficiency at this point.
 
 --- 
 
-## UML Diagram
+## 🧩 UML Diagram
 
 The UML diagram representing the class structure of this task:
 
@@ -18,16 +18,16 @@ The UML diagram representing the class structure of this task:
 
 ---
 
-## Concepts Used
+## 📚 Concepts Used
 
-- Encapsulation — `wordCounts` map is private, accessed only through class methods.
-- Abstraction — Word splitting, counting, and displaying logic are hidden inside `WordCounter`.
-- Collections Framework — Using `HashMap` to store and update word frequencies.
-- String Handling — Using `split("\\s+")` to tokenize input by whitespace and `toLowerCase()` for case insensitivity.
+- **Encapsulation:** `wordCounts` map is private, accessed only through class methods.
+- **Abstraction:** Word splitting, counting, and displaying logic are hidden inside `WordCounter`.
+- **Collections Framework:** Using `HashMap` to store and update word frequencies.
+- **String Handling:** Using `split("\\s+")` to tokenize input by whitespace and `toLowerCase()` for case insensitivity.
 
 --- 
 
-## Learning Notes
+## 📝 Learning Notes
 
 - A `HashMap<K,V>` stores key-value pairs and here, `word → count`.
 - `.split("\\s+")` splits a string into words using whitespace as the delimiter.
@@ -62,7 +62,7 @@ otherwise the default value (like `0`). This avoids extra `if-else` checks.
 
 ---
 
-## Code Location
+## 👨‍💻 Code Location
 
 You can view the complete source code for this task here:
 
@@ -70,7 +70,7 @@ You can view the complete source code for this task here:
 
 ---
 
-## Program Output
+## 🖥️ Program Output
 
 Sample console output demonstrating the program’s functionality:
 
