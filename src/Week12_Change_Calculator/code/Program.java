@@ -7,12 +7,8 @@ public class Program {
         System.out.println();
         ChangeCalculator makeChange = new ChangeCalculator();
         makeChange.takeInput();
-
-        if(makeChange.validatePayment())
-        {
-            makeChange.calculateChangeBreakdown();
-            System.out.println(makeChange);
-        }
+        makeChange.processPayment();
+        System.out.println(makeChange);
 
     }
 }

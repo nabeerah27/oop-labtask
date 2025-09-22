@@ -15,8 +15,9 @@ public class ChangeCalculator {
     private int[] noteDenominations = {5000, 1000, 500, 100, 50, 20, 10};
     private int[] coinDenominations = {5, 2, 1};
 
-    // Stores the breakdown of change
-    private Map<Integer, Integer> changeBreakdown = new LinkedHashMap<>();
+    // Arrays to store counts of notes/coins
+    private int[] noteCount = new int[noteDenominations.length];
+    private int[] coinCount = new int[coinDenominations.length];
 
     // Take input from the user
     public void takeInput() {
@@ -26,121 +27,97 @@ public class ChangeCalculator {
         givenAmount = sc.nextInt();
     }
 
-    // Validates payment and calculate change
-    public boolean validatePayment() {
+    // Process payment and calculate change breakdown
+    public void processPayment() {
         totalChange = givenAmount - chargedAmount;
 
         if (totalChange < 0)
         {
             System.out.println("Customer has given less money than charged amount. ");
-            return false;
+            return;
         }
         else if (totalChange == 0)
         {
             System.out.println("Customer has given exactly the same amount. No change needed. ");
-            return false;
+            return;
         }
         else
         {
             System.out.println("Customer has given more amount. Return the change. ");
-            return true;
+            calculateNotes();
+            calculateCoins();
         }
     }
 
-    // Computes how to return the change using minimum number of notes OR coins
-    public void calculateChangeBreakdown() {
+    // Method to calculate notes
+    private void calculateNotes() {
+        int remainingChange = totalChange;
 
-        // Clear any previous results before recalculating
-        changeBreakdown.clear();
-
-        // First distribute notes (higher denomination)
-        for (int note : noteDenominations)
+        for (int i = 0; i < noteDenominations.length; i++)
         {
-            // Check how many times this note can fit into remaining change
-            int count = totalChange / note;
-            if (count > 0)
-            {
-                // Store note and its count in the map
-                changeBreakdown.put(note, count);
-                totalChange -= count * note; // reduce the change by value of notes
-            }
+            noteCount[i] = remainingChange / noteDenominations[i];
+            remainingChange %= noteDenominations[i];
         }
+        totalChange = remainingChange; // update remaining change for coins
+    }
 
-        // Then distribute coins (lower denomination)
-        for (int coin : coinDenominations)
+    // Method to calculate coins
+    private void calculateCoins() {
+        int remainingChange = totalChange;
+
+        for (int i = 0; i < coinDenominations.length; i++)
         {
-            int count = totalChange / coin;
-            if (count > 0)
-            {
-                changeBreakdown.put(coin, count);
-                totalChange -= count * coin;
-            }
+            coinCount[i] = remainingChange / coinDenominations[i];
+            remainingChange %= coinDenominations[i];
         }
+        totalChange = remainingChange; // should become 0 at the end
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
 
-        // ---------- NOTES SECTION ----------
-        // Check if there are any notes in the change
-        boolean hasNotes = false;
-        for (int note : noteDenominations)
+        // Notes section
+        if (hasAny(noteCount))
         {
-            if (changeBreakdown.containsKey(note)) // if this note denomination exists in the map
+            sb.append("\nNotes:\n");
+            for (int i = 0; i < noteDenominations.length; i++)
             {
-                hasNotes = true;
-                break;
-            }
-        }
-
-        // If notes exist, print the "Notes:" heading and list each note with its count
-        if (hasNotes)
-        {
-            sb.append("Notes:\n");
-            for (int note : noteDenominations)
-            {
-                if (changeBreakdown.containsKey(note))
+                if (noteCount[i] > 0)
                 {
-                    sb.append(changeBreakdown.get(note)) // number of notes
-                            .append(" x ")
-                            .append(note) // denomination value
-                            .append("\n");
+                    sb.append(noteCount[i]).append(" x ").
+                            append(noteDenominations[i]).append("\n");
                 }
             }
         }
 
-        // ---------- COINS SECTION ----------
-        // Check if there are any coins in the change
-        boolean hasCoins = false;
-        for (int coin : coinDenominations)
-        {
-            if (changeBreakdown.containsKey(coin)) // if this coin denomination exists in the map
-            {
-                hasCoins = true;
-                break;
-            }
-        }
-
-        // If coins exist, print the "Coins:" heading and list each coin with its count
-        if (hasCoins)
+        // Coins section
+        if (hasAny(coinCount))
         {
             sb.append("Coins:\n");
-            for (int coin : coinDenominations)
+            for (int i = 0; i < coinDenominations.length; i++)
             {
-                if (changeBreakdown.containsKey(coin))
+                if (coinCount[i] > 0)
                 {
-                    sb.append(changeBreakdown.get(coin)) // number of coins
-                            .append(" x ")
-                            .append(coin) // denomination value
-                            .append("\n");
+                    sb.append(coinCount[i]).append(" x ").
+                            append(coinDenominations[i]).append("\n");
                 }
             }
         }
 
-        // Return the final structured output
         return sb.toString();
-
     }
+
+    // Helper method to check if any count is greater than zero
+    private boolean hasAny(int[] arr)
+    {
+        for (int val : arr)
+        {
+            if (val > 0)
+                return true;
+        }
+        return false;
+    }
+
 }
 
