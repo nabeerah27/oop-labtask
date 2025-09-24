@@ -1,6 +1,6 @@
-<h1 align="center">📄 Week 09 - Lab Task</h1>
+<h1 align="center">📄 Week 13 - Lab Task</h1>
 
-<h2 align="center">🟢 WORD COUNTER </h2>
+<h2 align="center">🟢 WORD COUNTER USING HASHMAP </h2>
 
 ## 📌 Problem Statement
 
@@ -66,7 +66,7 @@ otherwise the default value (like `0`). This avoids extra `if-else` checks.
 
 You can view the complete source code for this task here:
 
-[➡ View Week-09 Code](code)
+[➡ View Week 13 - Word Counter Using HashMap Code](code)
 
 ---
 

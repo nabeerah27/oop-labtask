@@ -1,6 +1,6 @@
 <h1 align="center">📄 Week 12 - Lab Task</h1>
 
-<h2 align="center">🟢 WORD COUNTER </h2>
+<h2 align="center">🟢 WORD COUNTER BY USING ARRAYLIST </h2>
 
 ----
 
@@ -51,7 +51,7 @@ need not worry about efficiency at this point.
 
 You can view the complete source code for this task here:
 
-[➡ View Week 12 - Word Counter Code](code)
+[➡ View Week 12 - Word Counter Using ArrayList Code](code)
 
 ---
 
