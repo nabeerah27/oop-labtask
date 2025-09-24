@@ -1,28 +1,22 @@
-package Week09_Word_Frequency.code;
+package Week13_Word_Counter_Using_HashMap.code;
 
-import java.util.Scanner;
 import java.util.Map;
 import java.util.HashMap;
 
 public class WordCounter {
 
     private Map<String, Integer> wordCounts; // stores word -> frequency
-    private Scanner sc = new Scanner(System.in);
-    private String input;
+    private String sentence;
 
     // Constructor
-    public WordCounter() {
+    public WordCounter(String sentence) {
         wordCounts = new HashMap<>();
-    }
-
-    public void takeInput() {
-        System.out.print("Enter words separated by spaces: ");
-        input = sc.nextLine();
+        this.sentence = sentence;
     }
 
     // Accepts raw input string, splits it, and counts
     public void setWordCounts() {
-        String[] words = input.split("\\s+"); // split words into array
+        String[] words = sentence.split("\\s+"); // split words into array
 
         for (String word : words)
         {
@@ -33,7 +27,7 @@ public class WordCounter {
 
     // Method to display word counts
     public void displayCounts() {
-        System.out.println("\uD83D\uDD22 Word counts  ");
+        System.out.println("WORD COUNTS");
         for (Map.Entry<String, Integer> entry : wordCounts.entrySet())
         {
             System.out.println(entry.getKey() + ": " + entry.getValue());

@@ -1,4 +1,4 @@
-package Week12_Word_Counter.code;
+package Week12_Word_Counter_Using_ArrayList.code;
 
 public class Main {
     public static void main(String[] args) {

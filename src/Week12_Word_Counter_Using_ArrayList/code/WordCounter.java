@@ -1,29 +1,24 @@
-package Week12_Word_Counter.code;
-
-import java.util.Scanner;
+package Week12_Word_Counter_Using_ArrayList.code;
 
 public class WordCounter {
 
-    private Scanner sc = new Scanner(System.in);
     private String sentence;
     private String[] words; // stores words of the sentence
     private int size;       // number of words in sentence
 
-    // Read sentence from the user
-    public void takeInput() {
-        System.out.print("Enter a sentence: ");
-        sentence = sc.nextLine();
+    public WordCounter(String sentence) {
+        this.sentence = sentence;
     }
 
     // Split sentence into words and store in array
-    public void splitSentenceIntoWords() {
+    public void split() {
         words = sentence.toLowerCase().split("\\s+"); // split by spaces
         size = words.length;
     }
 
-    // Count and print frequency of each word
-    public void displayWordFrequencies() {
-        System.out.println("\uD83D\uDD22 Word counts");
+    // Count and print frequency (counts) of each word
+    public void displayCounts() {
+        System.out.println("WORD COUNTS");
 
         // Array to track counted words
         boolean[] visited = new boolean[size];
@@ -45,7 +40,7 @@ public class WordCounter {
                 }
             }
 
-            // Print frequency of the current word
+            // Print frequency (counts) of the current word
             System.out.println(words[i] + ": " + count);
         }
     }
