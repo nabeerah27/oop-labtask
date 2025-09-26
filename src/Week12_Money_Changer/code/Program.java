@@ -8,14 +8,18 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        // Create cashier and customer
-        Cashier cashier = new Cashier("Ahmed");
-        Customer customer = new Customer("Ali", 10000); // customer has Rs. 10,000
+        // Input customer details
+        System.out.print("Enter cashier's name: ");
+        String cashierName = sc.nextLine();
+        Cashier cashier = new Cashier(cashierName);
 
-        System.out.println("🛒 Welcome to the Shop!");
-        System.out.println("Cashier: " + cashier.getName());
-        System.out.println("Customer: " + customer.getName() + " having money Rs. " + customer.getBalance());
-        System.out.println("-----------------------------------");
+        System.out.print("Enter customer's name: ");
+        String customerName = sc.nextLine();
+        System.out.print("Enter " + customerName + "'s starting balance: ");
+        int customerBalance = sc.nextInt();
+        Customer customer = new Customer(customerName, customerBalance);
+
+        System.out.println("\n🛒 Welcome to the Shop!");
 
         // Cashier makes a bill
         System.out.print("Enter total bill amount: ");
@@ -23,7 +27,7 @@ public class Program {
         cashier.setBill(bill);
 
         // Cashier shows bill
-        cashier.showBill();
+        cashier.showBill(cashierName, customerName);
 
         // Customer decides how much to pay
         System.out.print("Enter how much the customer pays: ");
@@ -31,6 +35,7 @@ public class Program {
 
         // Customer attempts payment
         boolean success = customer.payBill(cashier, payment);
+        System.out.println();
 
         // Cashier handles change if needed
         if (success)
@@ -47,11 +52,14 @@ public class Program {
                 {
                     System.out.println("✅ Transaction successful!");
                     System.out.println(cashier); // shows breakdown of change
+                    cashier.displayStock();
                 }
             }
-            else
+            else // Exact payment, no change
             {
                 System.out.println("✅ Transaction successful! (No change needed)");
+                cashier.addPaymentToStock(payment);
+                cashier.displayStock();
             }
         }
         else

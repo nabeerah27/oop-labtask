@@ -28,8 +28,12 @@ public class Cashier extends Person {
         this.bill = bill;
     }
 
-    public void showBill() {
-        System.out.println("The total bill is: " + bill);
+    public void showBill(String cashierName, String customerName) {
+        System.out.println("\n========== 🧾 SHOP BILL ==========");
+        System.out.printf("%-12s : %s\n", "Cashier", cashierName);
+        System.out.printf("%-12s : %s\n", "Customer", customerName);
+        System.out.printf("%-12s : Rs. %d\n", "Total Bill", bill);
+        System.out.println("==================================\n");
     }
 
     // Make change considering stock availability, returns true if successful
@@ -83,6 +87,18 @@ public class Cashier extends Person {
     public void returnPayment(Customer customer, int amount) {
         customer.addBalance(amount); // give money back to customer's wallet
         System.out.println("💵 Cashier returned Rs. " + amount + " to " + customer.getName());
+    }
+
+    // Show cashier's current stock
+    public void displayStock() {
+        System.out.println("Cashier's Current Stock:");
+        for (int i = 0; i < denominations.length; i++)
+        {
+            if (stock[i] > 0)
+            {
+                System.out.println(denominations[i] + " x " + stock[i]);
+            }
+        }
     }
 
     // ✅ toString() shows breakdown of the last transaction

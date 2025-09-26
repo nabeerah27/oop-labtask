@@ -36,7 +36,7 @@ public class Customer extends Person {
         else
         {
             System.out.println("Payment received Rs. " + payment + ". Return the change. ");
-            balance -= payment; // deduct the paid amount
+            balance -= cashier.getBill(); // deduct the bill amount
             return true;
         }
     }
