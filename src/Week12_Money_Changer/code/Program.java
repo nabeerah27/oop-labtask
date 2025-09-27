@@ -1,5 +1,6 @@
 package Week12_Money_Changer.code;
 
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Program {
@@ -9,11 +10,13 @@ public class Program {
         Scanner sc = new Scanner(System.in);
 
         // Input customer details
-        System.out.print("Enter cashier's name: ");
+        System.out.print("\nEnter cashier's name: ");
         String cashierName = sc.nextLine();
         Cashier cashier = new Cashier(cashierName);
+        cashier.displayStock();
 
-        System.out.print("Enter customer's name: ");
+        // Input customer details
+        System.out.print("\nEnter customer's name: ");
         String customerName = sc.nextLine();
         System.out.print("Enter " + customerName + "'s starting balance: ");
         int customerBalance = sc.nextInt();
@@ -24,7 +27,7 @@ public class Program {
         // Cashier makes a bill
         System.out.print("Enter total bill amount: ");
         int bill = sc.nextInt();
-        cashier.setBill(bill);
+        cashier.makeBill(bill);
 
         // Cashier shows bill
         cashier.showBill(cashierName, customerName);
@@ -35,44 +38,70 @@ public class Program {
 
         // Customer attempts payment
         boolean success = customer.payBill(cashier, payment);
-        System.out.println();
 
-        // Cashier handles change if needed
-        if (success)
+        if(success)
         {
-            if (payment > bill)
+            if(payment == cashier.getBill())
             {
-                boolean changeGiven = cashier.makeChange(payment);
-                if (!changeGiven)
-                {
-                    System.out.println("❌ Transaction failed: Cashier cannot give change.");
-                    cashier.returnPayment(customer, payment); // cashier gives money back to the customer
-                }
-                else
-                {
-                    System.out.println("✅ Transaction successful!");
-                    System.out.println(cashier); // shows breakdown of change
-                    cashier.displayStock();
-                }
+                return;
             }
-            else // Exact payment, no change
+            else
             {
-                System.out.println("✅ Transaction successful! (No change needed)");
-                cashier.addPaymentToStock(payment);
-                cashier.displayStock();
+                // Choose change method
+                System.out.println("""
+                \nChoose change method:\s
+                1. Array version\s
+                2. HashMap version\s
+                Enter you choice:""");
+
+                int choice = sc.nextInt();
+
+                // ARRAY VERSION
+                if(choice == 1)
+                {
+                    int[] returnedArray = cashier.makeChangeArray(payment);
+                    if(returnedArray != null)
+                    {
+                        System.out.println("Change returned as: ");
+                        int[] denoms = cashier.getDenominations();
+
+                        for (int i = 0; i < denoms.length; i++)
+                        {
+                            if(returnedArray[i] > 0)
+                            {
+                                System.out.println(denoms[i] + " x " + returnedArray[i]);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        cashier.returnPayment(customer, payment);
+                    }
+                }
+                // HASHMAP VERSION
+                else if(choice == 2)
+                {
+                    HashMap<Integer, Integer> returnedMap = cashier.makeChangeMap(payment);
+                    if(returnedMap != null)
+                    {
+                        System.out.println("Change returned as: ");
+                        for(HashMap.Entry<Integer, Integer> entry : returnedMap.entrySet())
+                        {
+                            System.out.println(entry.getKey() + " x " + entry.getValue());
+                        }
+                    }
+                    else
+                    {
+                        cashier.returnPayment(customer, payment);
+                    }
+                }
             }
         }
         else
         {
-            System.out.println("❌ Transaction failed. Please try again.");
+            cashier.returnPayment(customer, payment);
         }
-
-        // Final state of customer’s wallet
-        System.out.println("-----------------------------------");
-        System.out.println(customer);
-
-        sc.close();
-
+        cashier.displayStock();
 
     }
 }
