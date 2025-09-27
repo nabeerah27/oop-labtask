@@ -43,6 +43,8 @@ public class Program {
         {
             if(payment == cashier.getBill())
             {
+                System.out.println("\n" + customerName + "'s current balance: " + customer.getBalance());
+                cashier.displayStock();
                 return;
             }
             else
@@ -99,7 +101,7 @@ public class Program {
         }
         else
         {
-            cashier.returnPayment(customer, payment);
+            System.out.println("Transaction failed! Money not deducted. ");
         }
 
         System.out.println("\n" + customerName + "'s current balance: " + customer.getBalance());
