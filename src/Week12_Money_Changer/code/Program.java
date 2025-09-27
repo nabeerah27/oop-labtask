@@ -27,7 +27,7 @@ public class Program {
         // Cashier makes a bill
         System.out.print("Enter total bill amount: ");
         int bill = sc.nextInt();
-        cashier.makeBill(bill);
+        cashier.setBill(bill);
 
         // Cashier shows bill
         cashier.showBill(cashierName, customerName);
@@ -101,6 +101,8 @@ public class Program {
         {
             cashier.returnPayment(customer, payment);
         }
+
+        System.out.println("\n" + customerName + "'s current balance: " + customer.getBalance());
         cashier.displayStock();
 
     }

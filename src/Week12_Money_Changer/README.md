@@ -45,8 +45,8 @@ If yes, which OOP feature will help you most?
 
 5. Change Calculation
 - User chooses a method:
-  - Array Version → Change is returned using arrays.
-  - HashMap Version → Change is returned using key-value pairs.
+  - `Array Version`: Change is returned using arrays.
+  - `LinkedHashMap Version`: Change is returned using key-value pairs.
 - Payment is first added to cashier’s stock, then change is deducted.
 - If cashier cannot provide exact change, the full payment is returned to the customer.
 
@@ -93,7 +93,7 @@ the system’s workflow (Cashier–Customer interaction).
 
 - Learned to model real-world cashier–customer interaction using OOP.
 - Understood how payment affects stock before returning change.
-- Practiced applying **Greedy Algorithm** in real-world currency distribution with both arrays and `HashMap`.
+- Practiced applying **Greedy Algorithm** in real-world currency distribution with both arrays and `LinkedHashMap`.
 - Strengthened skills in object-oriented programming with encapsulated fields, reusable methods, and inheritance.
 - Improved skills in formatted console outputs for bill printing and stock display.
 - Validated the importance of data validation (e.g., insufficient money or exact payment cases).
@@ -114,9 +114,8 @@ You can view the complete source code for this task here:
 Enter cashier's name: Peter 
 Cashier's Current Stock: 
 5000x2 | 1000x3 | 500x5 | 100x10 | 50x10 | 20x10 | 10x20 | 5x20 | 2x30 | 1x100 | 
-
 Enter customer's name: Julie 
-Enter Julie's starting balance: 10000 
+Enter Julie's starting balance: 7000 
 
 🛒 Welcome to the Shop! 
 Enter total bill amount: 1212 
@@ -144,6 +143,7 @@ Change returned as:
 2 x 1 
 1 x 1 
 
+Julie's current balance: 5788
 Cashier's Current Stock: 
 5000x2 | 500x5 | 100x7 | 50x10 | 20x9 | 10x19 | 5x20 | 2x29 | 1x99 |
 

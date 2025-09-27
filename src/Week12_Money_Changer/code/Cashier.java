@@ -24,7 +24,7 @@ public class Cashier extends Person {
     }
 
     // Setter for bill (set the total bill for the current customer)
-    public void makeBill(int bill) {
+    public void setBill(int bill) {
         this.bill = bill;
     }
 

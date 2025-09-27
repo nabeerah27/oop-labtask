@@ -10,6 +10,10 @@ public class Customer extends Person {
         this.balance = balance;
     }
 
+    public int getBalance() {
+        return balance;
+    }
+
     public boolean payBill(Cashier cashier, int payment) {
         int bill = cashier.getBill();
 
