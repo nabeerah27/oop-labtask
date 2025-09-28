@@ -10,17 +10,17 @@ public class Program {
         Scanner sc = new Scanner(System.in);
 
         // Input customer details
-        System.out.print("\nEnter cashier's name: ");
+        System.out.print("\nEnter uncle's name: ");
         String uncleName = sc.nextLine();
         Cashier uncle = new Cashier(uncleName);
         uncle.displayStock();
 
         // Input customer details
-        System.out.print("\nEnter customer's name: ");
-        String auntyName = sc.nextLine();
-        System.out.print("Enter " + auntyName + "'s starting balance: ");
-        int auntyPaisay = sc.nextInt();
-        Customer aunty = new Customer(auntyName, auntyPaisay);
+        System.out.print("\n\nEnter khareedar's name: ");
+        String khareedarNaam = sc.nextLine();
+        System.out.print("Enter " + khareedarNaam + "'s starting balance: ");
+        int khareedarPaisay = sc.nextInt();
+        Customer aunty = new Customer(khareedarNaam, khareedarPaisay);
 
         System.out.println("\n🛒 Welcome to the Shop!");
 
@@ -30,10 +30,10 @@ public class Program {
         uncle.setBill(bill);
 
         // Cashier shows bill
-        uncle.showBill(uncleName, auntyName);
+        uncle.showBill(uncleName, khareedarNaam);
 
         // Customer decides how much to pay
-        System.out.print("Enter how much the customer pays: ");
+        System.out.print("Enter how much " + khareedarNaam + " pays: ");
         int payment = sc.nextInt();
 
         // Customer attempts payment
@@ -43,18 +43,18 @@ public class Program {
         {
             if(payment == uncle.getBill())
             {
-                System.out.println("\n" + auntyName + "'s current balance: " + aunty.getBalance());
+                System.out.println("\n" + khareedarNaam + "'s current balance: " + aunty.getBalance());
                 uncle.displayStock();
                 return;
             }
             else
             {
                 // Choose change method
-                System.out.println("""
+                System.out.print("""
                 \nChoose change method:\s
                 1. Array version\s
                 2. HashMap version\s
-                Enter you choice:""");
+                Enter you choice: \s""");
 
                 int choice = sc.nextInt();
 
@@ -64,7 +64,7 @@ public class Program {
                     int[] khullayPaisay = uncle.makeChangeArray(payment);
                     if(khullayPaisay != null)
                     {
-                        System.out.println("Change returned as: ");
+                        System.out.println("\nChange returned as: ");
                         int[] denoms = uncle.getDenominations();
 
                         for (int i = 0; i < denoms.length; i++)
@@ -86,7 +86,7 @@ public class Program {
                     HashMap<Integer, Integer> returnedMap = uncle.makeChangeMap(payment);
                     if(returnedMap != null)
                     {
-                        System.out.println("Change returned as: ");
+                        System.out.println("\nChange returned as: ");
                         for(HashMap.Entry<Integer, Integer> entry : returnedMap.entrySet())
                         {
                             System.out.println(entry.getKey() + " x " + entry.getValue());
@@ -104,8 +104,9 @@ public class Program {
             System.out.println("Transaction failed! Money not deducted. ");
         }
 
-        System.out.println("\n" + auntyName + "'s current balance: " + aunty.getBalance());
+        System.out.println("\n" + khareedarNaam + "'s current balance: " + aunty.getBalance());
         uncle.displayStock();
+        System.out.println();
 
     }
 }

@@ -137,7 +137,7 @@ public class Cashier extends Person {
 
     // Display cashier's current stock
     public void displayStock() {
-        System.out.println("Cashier's Current Stock:");
+        System.out.println("Uncle's Current Stock:");
         for (int i = 0; i < denominations.length; i++)
         {
             if (stock[i] > 0)
