@@ -11,40 +11,40 @@ public class Program {
 
         // Input customer details
         System.out.print("\nEnter cashier's name: ");
-        String cashierName = sc.nextLine();
-        Cashier cashier = new Cashier(cashierName);
-        cashier.displayStock();
+        String uncleName = sc.nextLine();
+        Cashier uncle = new Cashier(uncleName);
+        uncle.displayStock();
 
         // Input customer details
         System.out.print("\nEnter customer's name: ");
-        String customerName = sc.nextLine();
-        System.out.print("Enter " + customerName + "'s starting balance: ");
-        int customerBalance = sc.nextInt();
-        Customer customer = new Customer(customerName, customerBalance);
+        String auntyName = sc.nextLine();
+        System.out.print("Enter " + auntyName + "'s starting balance: ");
+        int auntyPaisay = sc.nextInt();
+        Customer aunty = new Customer(auntyName, auntyPaisay);
 
         System.out.println("\n🛒 Welcome to the Shop!");
 
         // Cashier makes a bill
         System.out.print("Enter total bill amount: ");
         int bill = sc.nextInt();
-        cashier.setBill(bill);
+        uncle.setBill(bill);
 
         // Cashier shows bill
-        cashier.showBill(cashierName, customerName);
+        uncle.showBill(uncleName, auntyName);
 
         // Customer decides how much to pay
         System.out.print("Enter how much the customer pays: ");
         int payment = sc.nextInt();
 
         // Customer attempts payment
-        boolean success = customer.payBill(cashier, payment);
+        boolean success = aunty.payBill(uncle, payment);
 
         if(success)
         {
-            if(payment == cashier.getBill())
+            if(payment == uncle.getBill())
             {
-                System.out.println("\n" + customerName + "'s current balance: " + customer.getBalance());
-                cashier.displayStock();
+                System.out.println("\n" + auntyName + "'s current balance: " + aunty.getBalance());
+                uncle.displayStock();
                 return;
             }
             else
@@ -61,29 +61,29 @@ public class Program {
                 // ARRAY VERSION
                 if(choice == 1)
                 {
-                    int[] returnedArray = cashier.makeChangeArray(payment);
-                    if(returnedArray != null)
+                    int[] khullayPaisay = uncle.makeChangeArray(payment);
+                    if(khullayPaisay != null)
                     {
                         System.out.println("Change returned as: ");
-                        int[] denoms = cashier.getDenominations();
+                        int[] denoms = uncle.getDenominations();
 
                         for (int i = 0; i < denoms.length; i++)
                         {
-                            if(returnedArray[i] > 0)
+                            if(khullayPaisay[i] > 0)
                             {
-                                System.out.println(denoms[i] + " x " + returnedArray[i]);
+                                System.out.println(denoms[i] + " x " + khullayPaisay[i]);
                             }
                         }
                     }
                     else
                     {
-                        cashier.returnPayment(customer, payment);
+                        uncle.returnPayment(aunty, payment);
                     }
                 }
                 // HASHMAP VERSION
                 else if(choice == 2)
                 {
-                    HashMap<Integer, Integer> returnedMap = cashier.makeChangeMap(payment);
+                    HashMap<Integer, Integer> returnedMap = uncle.makeChangeMap(payment);
                     if(returnedMap != null)
                     {
                         System.out.println("Change returned as: ");
@@ -94,7 +94,7 @@ public class Program {
                     }
                     else
                     {
-                        cashier.returnPayment(customer, payment);
+                        uncle.returnPayment(aunty, payment);
                     }
                 }
             }
@@ -104,8 +104,8 @@ public class Program {
             System.out.println("Transaction failed! Money not deducted. ");
         }
 
-        System.out.println("\n" + customerName + "'s current balance: " + customer.getBalance());
-        cashier.displayStock();
+        System.out.println("\n" + auntyName + "'s current balance: " + aunty.getBalance());
+        uncle.displayStock();
 
     }
 }
