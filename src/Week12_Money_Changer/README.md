@@ -111,30 +111,30 @@ You can view the complete source code for this task here:
 ## 🖥️ Example Run
 
 ```
-Enter cashier's name: Peter 
-Cashier's Current Stock: 
+Enter uncle's name: Jawad 
+Uncle's Current Stock: 
 5000x2 | 1000x3 | 500x5 | 100x10 | 50x10 | 20x10 | 10x20 | 5x20 | 2x30 | 1x100 | 
-Enter customer's name: Julie 
-Enter Julie's starting balance: 7000 
+Enter khareedar's name: Sajafa 
+Enter Sajafa's starting balance: 7000 
 
 🛒 Welcome to the Shop! 
 Enter total bill amount: 1212 
 
 ========== 🧾 SHOP BILL ========== 
-Cashier      : Peter 
-Customer     : Julie 
+Cashier      : Jawad 
+Customer     : Sajafa 
 Total Bill   : Rs. 1212 
 ===================================
 
-Enter how much the customer pays: 4545 
-Payment received Rs. 4545. Return the change. 
+Enter how much Sajafa pays: 4545 
+Payment received Rs. 4545. Return the change Rs. 3333
 
 Choose change method: 
 1. Array version 
 2. HashMap version 
 Enter your choice: 1 
-
 Change to return Rs. 3333 
+
 Change returned as: 
 1000 x 3 
 100 x 3 
@@ -143,8 +143,8 @@ Change returned as:
 2 x 1 
 1 x 1 
 
-Julie's current balance: 5788
-Cashier's Current Stock: 
+Sajafa's current balance: 5788
+Uncle's Current Stock: 
 5000x2 | 500x5 | 100x7 | 50x10 | 20x9 | 10x19 | 5x20 | 2x29 | 1x99 |
 
 ```
