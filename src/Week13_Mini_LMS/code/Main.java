@@ -27,9 +27,6 @@ public class Main {
         studentList.sortBySeatNo();
         System.out.println(studentList);
 
-        System.out.println("\n===== Current Student List =====");
-        System.out.println(studentList);
-
         System.out.println("===== Add Student at Index 1 =====");
         Student s7 = new Student("David", "S105", 2.2, 2);
         if(studentList.addStudent(1, s7))
