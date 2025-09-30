@@ -1,5 +1,7 @@
 package Week13_Mini_LMS.code;
 
+import java.util.Arrays;
+
 public class StudentList {
 
     private Student[] students; // Array to hold Student objects
@@ -148,19 +150,34 @@ public class StudentList {
         return removeStudent(s.getSeatNo());
     }
 
-    // Sort students by name (bubble sort)
-    public void sortByName() {
-        for(int i = 0; i < size; i++)
-        {
-            for (int j = i + 1; j < size; j++)
-            {
-                if (students[i].getName().compareToIgnoreCase(students[j].getName()) > 0)
-                {
-                    Student temp = students[i];
-                    students[i] = students[j];
-                    students[j] = temp;
-                }
+    // Sort by natural order (seatNo)
+    public void sortBySeatNo() {
+        Arrays.sort(students, 0, size);
+    }
 
+    // Sort by name
+    public void sortByName() {
+        Arrays.sort(students, 0, size, StudentComparators.byName);
+    }
+
+    // Sort by CGPA
+    public void sortByCGPA() {
+        Arrays.sort(students, 0, size, StudentComparators.byCgpa);
+    }
+
+    // Sort by CGPA (ascending)
+    public void sortByCgpaAscending() {
+        for (int i = 0; i < size - 1; i++)
+        {
+            for (int j = 0; j < size - i - 1; j++)
+            {
+                // Custom comparison logic for ascending order
+                if (students[j].getCGPA() > students[j + 1].getCGPA())
+                {
+                    Student temp = students[j];
+                    students[j] = students[j + 1];
+                    students[j + 1] = temp;
+                }
             }
         }
     }
@@ -178,11 +195,11 @@ public class StudentList {
 
     // String representation of the whole student list
     public String toString() {
-        StringBuilder sb = new StringBuilder("Student List:\n");
+        StringBuilder sb = new StringBuilder();
 
         for(int i = 0; i < size; i++)
         {
-            sb.append(students[i])
+            sb.append("\n").append(students[i])
                     .append("\n");
         }
         return sb.toString();
