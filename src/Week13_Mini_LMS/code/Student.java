@@ -1,6 +1,6 @@
 package Week13_Mini_LMS.code;
 
-public class Student implements Comparable<Student> {
+public class Student implements Comparable<Student>, Cloneable {
 
     private String name;
     private String seatNo;
@@ -24,6 +24,16 @@ public class Student implements Comparable<Student> {
 
     public double getCGPA() {
         return CGPA;
+    }
+
+    @Override
+    public Student clone() throws CloneNotSupportedException {
+        Student copy = (Student) super.clone();
+        if(semester != null)
+        {
+            copy.semester = this.semester.clone();
+        }
+        return copy;
     }
 
     @Override

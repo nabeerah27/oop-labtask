@@ -53,8 +53,8 @@ public class Main {
         System.out.println(studentList);
 
         System.out.println("===== Searching Students =====");
-        Student searchSeat = studentList.searchBySeatNo("S105");
-        System.out.println(searchSeat != null ? "Found by SeatNo: " + searchSeat.getName() : "SeatNo not found");
+        int studentIdx = studentList.searchBySeatNo("S105");
+        System.out.println(studentIdx != -1 ? "Found student at index : " + studentIdx : "Student not found");
 
         System.out.println("\n===== Sorting Students by Name =====");
         studentList.sortByName();

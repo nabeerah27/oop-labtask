@@ -1,6 +1,6 @@
 package Week13_Mini_LMS.code;
 
-public class Course {
+public class Course implements Cloneable {
 
     private String courseName;
     private int courseCode;
@@ -16,6 +16,11 @@ public class Course {
 
     public int getCourseCode() {
         return courseCode;
+    }
+
+    @Override
+    public Course clone() throws CloneNotSupportedException {
+        return (Course) super.clone();
     }
 
     @Override

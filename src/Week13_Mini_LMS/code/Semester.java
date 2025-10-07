@@ -3,7 +3,7 @@ package Week13_Mini_LMS.code;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Semester {
+public class Semester implements Cloneable {
 
     private int semesterNo;
     private List<Course> courses;
@@ -13,6 +13,18 @@ public class Semester {
         this.semesterNo = semesterNo;
 
         assignCourses(); // automatically assign courses to the Student object according to the semester number
+    }
+
+    @Override
+    public Semester clone() throws CloneNotSupportedException {
+        Semester copy = (Semester) super.clone();
+        copy.courses = new ArrayList<>();
+
+        for(Course course : courses)
+        {
+            copy.courses.add(course.clone());
+        }
+        return copy;
     }
 
     public void assignCourses() {

@@ -2,7 +2,7 @@ package Week13_Mini_LMS.code;
 
 import java.util.Arrays;
 
-public class StudentList {
+public class StudentList implements Cloneable {
 
     private Student[] students; // Array to hold Student objects
     private int size = 0;       // Current number of students in the list
@@ -22,6 +22,13 @@ public class StudentList {
     public StudentList(int capacity, Student[] students) {
         this.capacity = capacity;
         this.students = students;
+    }
+
+    // Copy constructor
+    public StudentList(StudentList other) {
+        this.capacity = other.capacity;
+        this.size = other.size;
+        this.students = other.students;
     }
 
     // Returns size of the list
@@ -109,24 +116,16 @@ public class StudentList {
     }
 
     // Remove student by seat number
-    public Student removeStudent(String seatNo) {
+    public Student removeStudent(String seatNumber) {
 
-        if(!seatNoExist(seatNo))
+        if(!seatNoExist(seatNumber))
         {
             System.out.println("ERROR: Seat number does not exist in the list.");
             return null;
         }
 
         // Find the index of the removed student
-        int idx = -1;
-        for(int i = 0; i < size; i++)
-        {
-            if(students[i].getSeatNo().equals(seatNo))
-            {
-                idx = i;
-                break;
-            }
-        }
+        int idx = searchBySeatNo(seatNumber);
 
         // Save the student to return later
         Student removedStudent = students[idx];
@@ -148,6 +147,41 @@ public class StudentList {
         if (s == null)
             return null;
         return removeStudent(s.getSeatNo());
+    }
+
+    public int searchBySeatNo(String seatNo) {
+        for(int i = 0; i < size; i++)
+        {
+            if(students[i].getSeatNo().equals(seatNo))
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public int searchByName(String name) {
+        for (int i = 0; i < size; i++)
+        {
+            if(students[i].getName().equalsIgnoreCase(name))
+            {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    @Override
+    public StudentList clone() throws CloneNotSupportedException {
+
+        StudentList copy = (StudentList) super.clone();
+        copy.students = new Student[this.capacity];
+
+        for(int i = 0; i < this.size; i++)
+        {
+            copy.students[i] = this.students[i].clone();
+        }
+        return copy;
     }
 
     // Sort by natural order (seatNo)
@@ -182,17 +216,6 @@ public class StudentList {
         }
     }
 
-    public Student searchBySeatNo(String seatNo) {
-        for(int i = 0; i < size; i++)
-        {
-            if(students[i].getSeatNo().equals(seatNo))
-            {
-                return students[i];
-            }
-        }
-        return null;
-    }
-
     // String representation of the whole student list
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -207,7 +230,7 @@ public class StudentList {
 
     // Helper method to check if seat number already exists in list or not
     private boolean seatNoExist(String seatNo) {
-        return searchBySeatNo(seatNo) != null;
+        return searchBySeatNo(seatNo) > 0;
     }
 
 }
